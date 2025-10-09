@@ -14,7 +14,7 @@ const MenuScreen = () => {
             <TouchableOpacity
             style={styles.quiz}
             onPress={() => props.navigation.navigate("Quiz")}>
-                <Text>Go to Quiz screen</Text>
+                <Text>Go to Quiz Screen</Text>
             </TouchableOpacity>
         </View>
     );
