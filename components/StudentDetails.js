@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Image } from "react-native-web";
+import { Text, View, StyleSheet, Image } from "react-native";
 
 
 const StudentDetails = (props) => {
