@@ -31,6 +31,16 @@ const MenuScreen = (props) => {
                 title="Go to Advanced Box Screen"
                 onPress={() => props.navigation.navigate("Advanced Box")}
             />  
+            <Button
+            style={styles.btn}
+                title="Go to Advanced Box Screen"
+                onPress={() => props.navigation.navigate("Posts")}
+            />  
+            <Button
+            style={styles.btn}
+                title="Go to Users  Screen"
+                onPress={() => props.navigation.navigate("Users")}
+            />  
         </View>
     );
 };
