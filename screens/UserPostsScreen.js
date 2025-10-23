@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, FlatList, ThouchableOpacity } from "react-nativ
 
 class UserPostsScreen extends React.Component {
 
-    constructor() {
+    constructor() { //Postavlja objekat komponente
             super();
             this.state = {
                 users: [],    

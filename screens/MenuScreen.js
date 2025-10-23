@@ -40,7 +40,12 @@ const MenuScreen = (props) => {
             style={styles.btn}
                 title="Go to Users  Screen"
                 onPress={() => props.navigation.navigate("Users")}
-            />  
+            />
+            <Button
+            style={styles.btn}
+                title="Go to Photo Screen"
+                onPress={() => props.navigation.navigate("Photo")}
+            />    
         </View>
     );
 };

@@ -13,6 +13,7 @@ import AdvancedBoxScreenChallange from "./screens/BoxScreen";
 import PostsScreen from "./screens/PostScreen";
 import UserScreen from "./screens/UserScreen";
 import UserPostsScreen from "./screens/UserPostsScreen";
+import PhotoScreen from "./screens/PhotoScreen";
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ export default function App() {
           <Stack.Screen name="Posts" component={PostsScreen}></Stack.Screen>
           <Stack.Screen name="Users" component={UserScreen}></Stack.Screen>
           <Stack.Screen name="UsersPosts" component={UserPostsScreen}></Stack.Screen>
+          <Stack.Screen name="Photo" component={PhotoScreen}></Stack.Screen>
         </Stack.Navigator>
     </NavigationContainer>
   );
