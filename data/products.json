@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Polo Ralph Lauren Polo T-Shirt",
+        "category": "polo t-shirt",
+        "price": "$170",
+        "stock": "Yes",
+        "image": "https://cdn.mainlinemenswear.co.uk/f_auto,q_auto/mainlinemenswear/shopimages/products/158343/Mainimage.jpg",
+        "description": "Timeless and elegant polo t-shirt"
+    },
+    {
+        "id": 2,
+        "name": "Nike Air Force 1 Black",
+        "category": "shoes",
+        "price": "$150",
+        "stock": "Yes",
+        "image": "https://www.nike.qa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw79cfca25/nk/5da/a/0/0/d/9/5daa00d9_afae_4125_a95c_fc71923b81c3.jpg?sw=700&sh=700&sm=fit&q=100&strip=false",
+        "description": "hight quality and trendy shoe"
+    },
+    {
+        "id": 3,
+        "name": "Moncler Vest",
+        "category": "vest",
+        "price": "$1000",
+        "stock": "No",
+        "image": "https://cdn.saksfifthavenue.com/is/image/saks/0400021533304_BLACK?wid=600&hei=800&qlt=90&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0",
+        "description": "Luxurious flashy vest"
+    },
+    {
+        "id": 4,
+        "name": "Tissot PRX 80 powermatic",
+        "category": "watch",
+        "price": "$570",
+        "stock": "Yes",
+        "image": "https://silverland.ba/wp-content/uploads/2022/10/T1374071104100.jpg",
+        "description": "Swiss quality automatic watch"
+    },
+    {
+        "id": 5,
+        "name": "Polo Ralph Lauren puffer jacket",
+        "category": "jacket",
+        "price": "$550",
+        "stock": "No",
+        "image": "https://www.flannels.com/images/imgzoom/60/60299041_xxl_a10.jpg",
+        "description": "Warm and good looking winter puffer"
+    },
+    {
+        "id": 6,
+        "name": "Boss suit",
+        "category": "suit",
+        "price": "$2000",
+        "stock": "Yes",
+        "image": "https://img.cdn-cnj.si/img/500/500/jZ/jZYvRFOkMpCZ.webp",
+        "description": "Walt in the room like a boss!"
+    },
+    {
+        "id": 7,
+        "name": "Levi's Jeans",
+        "category": "jeans",
+        "price": "$100",
+        "stock": "Yes",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQW_tJSu_IVrzt_Hq-HG4oL53pR0PZb9kSw&s",
+        "description": "Jeans classic"
+    },
+    {
+        "id": 8,
+        "name": "Moncler cardigan",
+        "category": "jacket",
+        "price": "$1800",
+        "stock": "Yes",
+        "image": "https://www.mrporter.com/variants/images/38063312418859735/in/w2000_q60.jpg",
+        "description": "Lorem ipsum dolor sit amet"
+    }
+]

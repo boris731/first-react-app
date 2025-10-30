@@ -27,7 +27,7 @@ class CountriesScreen extends React.Component {
                         
                         <View> 
                             <ThouchableOpacity
-                            onPress={() => props.navigation.navigate("Details")}>
+                            onPress={() => props.navigation.navigate("CountryDetails")}>
                             
                                 <Text>City name: {item.name}</Text>
                                 <Text>Country name: {item.country}</Text>

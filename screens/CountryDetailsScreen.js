@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, FlatList, StyleSheet, ThouchableOpacity } from 'react-native'
 import data from "../data/countries.json";
 
-const Profileinfo = (props) => {
+const CountriyDetailsScreen = (props) => {
     return (
         <View>
             <View source={styles.cardWrapper}>
@@ -29,3 +29,4 @@ const styles = StyleSheet.create({
     },
 })
 
+export default CountriyDetailsScreen
