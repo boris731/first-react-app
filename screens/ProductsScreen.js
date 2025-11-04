@@ -1,6 +1,7 @@
 import React from 'react'
-import { View, Text, FlatList, StyleSheet, ThouchableOpacity, Image } from 'react-native'
+import { View, Text, FlatList, StyleSheet, ThouchableOpacity, Image, ScrollView } from 'react-native'
 import data from "../data/products.json";
+import Product from '../components/Product';
 
 class ProductsScreen extends React.Component {
     constructor () {
@@ -18,50 +19,42 @@ class ProductsScreen extends React.Component {
 
     render() {
         return(
-            <View>
-                <Text>Products Screen</Text>
-                <FlatList
-                    data={this.state.products}
-                    keyExtractor={products => products.id}
-                    renderItem={({ item }) => (
-                        
-                        <View style={styles.cardWrapper}> 
-                            <Image source={{uri:item.image}} style={styles.img}></Image>
-                            <Text>Name: {item.name}</Text>
-                            <Text>Category: {item.category}</Text>
-                            <Text>Price: {item.price}</Text>
-                            <Text>Stock: {item.stock}</Text>
-                            <Text>Description: {item.description}</Text>
-                        </View>
-                    )}
-                />
-            </View>
-    
-        );
+                <View>
+                    <Text style={styles.container}>Top products of 2020</Text>
+                    <FlatList
+                        data={this.state.products}
+                        renderItem={({item}) => (
+                            <View style={styles.container}>
+                                <Product 
+                                    name={item.name}
+                                    category={item.category}
+                                    price={item.price}
+                                    stock={item.stock}
+                                    image={item.image}
+                                    desc={item.description}
+                                />
+                            </View>
+                        )}
+                    />
+                </View>
+        )
     }
 
 }
 
 
 
+
 const styles = StyleSheet.create({
-    img:
-    {
-        flex: 1, 
-        width: 250,
-        height: 250,
-        resizeMode:'contain'
+    container: {
+        allingItems: "center",
     },
-    cardWrapper: 
-    {
-        flex: 1,
-        flexDirection: "column",
-        flexWrap: "wrap",
-        alignItems: "center",
-        padding: 60,
-        backgroundColor: "white",
-        borderRadius: 20,
+
+    title: {
+        fontSize: 20,
+        marginVertical: 20,
+        fontWeight: "bold",
     },
-})
+});
 
 export default ProductsScreen;
