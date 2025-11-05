@@ -1,13 +1,14 @@
 import React from 'react'
-import { View, Text, FlatList, StyleSheet, ThouchableOpacity, Image, ScrollView } from 'react-native'
+import { View, Text, FlatList, StyleSheet, ThouchableOpacity, Image, ScrollView, Button } from 'react-native'
 import data from "../data/products.json";
-import Product from '../components/Product';
+import Product from '../components/Product.js';
 
 class ProductsScreen extends React.Component {
     constructor () {
         super();
         this.state = {
             products: [],
+            cart: [],
         }
     }
 
@@ -19,12 +20,12 @@ class ProductsScreen extends React.Component {
 
     render() {
         return(
-                <View>
-                    <Text style={styles.container}>Top products of 2020</Text>
+                <View  style={styles.container}>
+                    <Text style={styles.title}>Top products of 2020</Text>
                     <FlatList
                         data={this.state.products}
                         renderItem={({item}) => (
-                            <View style={styles.container}>
+                            <View>
                                 <Product 
                                     name={item.name}
                                     category={item.category}
@@ -33,12 +34,23 @@ class ProductsScreen extends React.Component {
                                     image={item.image}
                                     desc={item.description}
                                 />
+                                <Button             
+                                style={styles.btn}
+                                title="Add to Cart"
+                                onPress={this.addToCart(item)} />
                             </View>
                         )}
                     />
                 </View>
         )
     }
+    
+    addToCart(item){
+        this.state.cart.push(item)
+        console.log(this.state.cart)
+        
+    }
+    
 
 }
 
@@ -55,6 +67,10 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         fontWeight: "bold",
     },
+    btn: {
+        color: "white",
+        backgroundColor: "blue",
+    }
 });
 
 export default ProductsScreen;

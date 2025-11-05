@@ -1,11 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
-
 const Product = (props) => {
     return (
-        <View>
-            <Image source={{uri: '$props.image'}} style={styles.img}/>
+        <View style={styles.cardContainer}>
+            <Image source={{uri: props.image}} style={styles.img}/>
             <View style={styles.cardDesc}>
                 <Text>{props.name}</Text>
                 <Text>{props.descriptiom}</Text>
